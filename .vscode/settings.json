@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "14 may": "cpp",
+        "new": "cpp"
     }
 }

@@ -6,64 +6,68 @@ using namespace std;
 void bubbbling(int arr[], int s)
 {
     int c = 0;
+    bool check; 
 
     for (int i = 0; i < s; i++)
     {
-        if (s == 0)     //       condi 1   if size is zero : error; 
+        check = false;
+        for (int j = 0; j < s - 1 - i; j++)
         {
-            cout << "error "<<endl;
-            break;
-        }
-        else if (s == 1)        //  condi 2   if size is one :   must be 2 ; 
-        {
-            cout<<"size must be 2 "<<endl;  
-            break; 
-        } 
-        else if (s > 10)        //   condi 3    size should not exceed 10 ; 
-        { 
-            cout<<"max size is 10, array overloading "<<endl; 
-            break; 
-        } 
+            c++;
+            if (arr[j] > arr[j + 1])
+            {
+                swap(arr[j], arr[j + 1]);
+                check = true;
+            }
 
-        for ( int j=0; j<s-1; j++) 
-        { 
-            if (arr[j] > arr[j+1]) 
-            { 
-                swap(arr[j], arr[j+1]); 
+            if (check == false)
+            {
+                break;
             }
         }
     }
-} 
-
-void arrayPrint (int arr[], int s) 
-{ 
-    cout<<"bubbled Array: "<<endl; 
-    for (int i=0; i<s; i++) { 
-        cout<<arr[i]<<"  "; 
-    }
-} 
-
-int main () 
-{ 
-    int run[6] = {23, 5, 1, 9, 19, 8}; 
-
-    bubbbling( run, 6); 
-    arrayPrint( run, 6); 
+    cout << "no. of count: " << c << endl;
 }
 
+void arrayPrint(int arr[], int s)
+{
+    cout << "bubbled Array: " << endl;
+    for (int i = 0; i < s; i++)
+    {
+        cout << arr[i] << "  ";
+    }
+}
 
+int main()
+{
+    int s;
+    cout << "enter size of array: \n ";
+    cin >> s;
 
+    int ray[s];
+    cout << "enter " << s << " values \n"; 
 
+    if (s == 0) //       condi 1   if size is zero : error;
+        {
+            cout << "no value found error " << endl;
+        }
+        else if (s == 1) //  condi 2   if size is one :   must be 2 ;
+        {
+            cout << "size must be 2 " << endl;
+        }
+        else if (s > 10) //   condi 3    size should not exceed 10 ;
+        {
+            cout << "max size is 10, array overloading " << endl;
+        }
 
+    for (int i = 0; i < s; i++)
+    {
+        cin >> ray[i];
+    } 
 
-
-
-
-
-
-
-
-
+    bubbbling (ray, s); 
+    arrayPrint (ray, s); 
+}
 
 
 

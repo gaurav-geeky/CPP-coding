@@ -1,0 +1,32 @@
+// asymptotic notation :  to measure time complexity and space complexity 
+//  
+// 3 types,       3 cases        
+// Big O   O __  worst case     ____ ans in descending  ____ tak much time 
+//  Omega    ___ best case   ______ ans in ascending order  ____ take less time
+//  Theta   ___ average case  ________ ans in random order. ____ take some time. 
+
+//  units differs things   $ 5  !=  rupe 5 
+
+// Big O  is worst :  it is always taken to solve because if it runs in worst case then can   easily run in average and best case . 
+
+// n,  n2,   n log n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
