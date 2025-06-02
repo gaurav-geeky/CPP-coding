@@ -1,4 +1,5 @@
-//  dsa bubble
+
+//   BUBBLE SORT ORIGINAL  ::   increasing order. asceding order.  
 
 #include <iostream>
 using namespace std;
@@ -6,7 +7,7 @@ using namespace std;
 //      bubble for apply operation.
 void bubbles(int arr[], int n)
 {
-    int temp, c = 0;
+    int temp, c = 0; 
     bool swap;
 
     for (int i = 0; i < n; i++)

@@ -13,9 +13,13 @@
 
 
 
+#  quick sort  
 
+if p    q  not not  cross itself the n  swap      index of  p and q .  
 
+if p   q  croses  then       index of pv  and -ve swaps .  
 
+selected pivot elements will be form  the sorted array : quick sort.  
 
 
 
