@@ -1,5 +1,5 @@
 
-//  recursion . power of number.    then  table in function.  
+//  recursion . power of number.    then  table in function.
 
 #include <iostream>
 using namespace std;
@@ -15,7 +15,7 @@ int power(int b, int p)
         return 1;
     }
 
-    int k; 
+    int k;
     k = b * power(b, p - 1);
 
     return k;
@@ -25,14 +25,14 @@ void table(int num, int ind)
 {
     if (ind > 10)
     {
-        return ;
+        return;
     }
 
     int k;
     k = num * ind;
     cout << k << "\t";
 
-    table(num, ind+1);
+    table(num, ind + 1);
 }
 
 int main()
@@ -45,8 +45,10 @@ int main()
 
     cout << power(a, b);
 
-    int x; 
-    cout << "\n\n enter digit : ";
+    cout << "\n";
+
+    int x;
+    cout << " enter digit : ";
     cin >> x;
 
     table(x, 1);
