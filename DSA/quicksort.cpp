@@ -30,6 +30,7 @@ int part(int arr[], int low, int high)  //      logic part
             arr[j] = tmp;
         }
     } while (i < j);
+
     //                        if BOTH STOP   and_ i , j  _crossed  then    swap value :  j  &  pivot (must point)
     tmp = arr[low];
     arr[low] = arr[j];
@@ -40,7 +41,6 @@ int part(int arr[], int low, int high)  //      logic part
 
 void qksort(int arr[], int low, int high)  //       qk sort recursion. 
 {
-
     int pvt;
     if (low < high)
     {

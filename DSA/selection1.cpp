@@ -1,5 +1,8 @@
 
-//   SELECTION SORT ORIGINAL  ::   increasin order. ascending order .      
+//   SELECTION SORT ORIGINAL  :: ascending order . 
+//  here is chotu ele store every i (val)  and  j= (i+1). 
+// if(val), chotu >  j [chotu check all j ele], then  chotu= j,  
+//  AT LAST   if chotu != i >>> swap (chotu , i).  
 
 #include <iostream>
 using namespace std;
@@ -9,7 +12,7 @@ int main()
     int arr[] = {3, 14, 2, 5, 7}; 
     int s = sizeof(arr) / sizeof(arr[0]); 
 
-    for (int i = 0; i < s; i++)
+    for (int i = 0; i < s; i++) 
     {
         cout << arr[i] << "\t";
     }
@@ -32,7 +35,7 @@ int main()
         {
             int swp;
             swp = arr[chotu];
-            arr[chotu] = arr[i];
+            arr[chotu] = arr[i]; 
             arr[i] = swp;
         }
     }
@@ -44,6 +47,11 @@ int main()
         cout << arr[i] << "\t";
     }
 }
+ 
+// here chotu check each element of (j loop) so  no optimize - both loop run. 
+
+
+
 
 
 

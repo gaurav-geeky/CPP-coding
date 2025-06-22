@@ -1,3 +1,4 @@
-
-    cout << "\n\n enter digit : ";
-    cin >> x;
+or (int i = 0; i < size; i++)
+    {
+        cout << car[i] << "\t";
+    }

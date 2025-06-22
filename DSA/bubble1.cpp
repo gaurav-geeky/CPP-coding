@@ -1,5 +1,7 @@
 
-//   BUBBLE SORT ORIGINAL  ::   increasing order. asceding order.  
+//   BUBBLE SORT ORIGINAL ::  asceding order. _ here each j ele COMPARE j+1 ele. 
+//   HERE,  do not store ele  but  if (val) j > (j+1)  sudden swap. 
+//   no need to check each value   so optimizable. 
 
 #include <iostream>
 using namespace std;
@@ -16,7 +18,7 @@ void bubbles(int arr[], int n)
         //  here,  (n-i-1)  because condition will check 1__1+ value so, no need last one, avoid unnecessary check
         // code will run less , good time complexity.  
         
-        for (int j = 0; j < n - i - 1; j++)
+        for (int j = 0;  j < n-i-1;  j++)
         {
             c++; //  here, if it swaps then it counts.
 
@@ -57,5 +59,3 @@ int main()
     bubbles(Arr, 5);
     printArr(Arr, 5);
 }
-
-

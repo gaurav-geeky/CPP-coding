@@ -1,13 +1,15 @@
 
-//   INSERTION SORT ORIGINAL ::   Increase order .  ascending order. 
+//   INSERTION SORT ORIGINAL :: ascending order. __ like  TEEN patti. 
+//   0th ele  is sorted .  res unsorted so loop  i = 1 ,    int min = i
+//   check  min > 0 (ind) .  (val) min < min-1 . 
 
 #include <iostream>
 using namespace std;
 
+
 int main()
 {
-
-  int arr[] = {1, 3, 2, 4, 5};
+  int arr[] = {11, 3, 9, 4, 5};
   int s = sizeof(arr) / sizeof(arr[0]);
 
   for (int i = 0; i < s; i++)
@@ -33,6 +35,7 @@ int main()
       min--;
     }
   }
+
   cout << "\ncounter=" << c;
 
   cout << " \nafter insertion sort \n";
