@@ -17,11 +17,9 @@ class Teacher {
     void changeDept (string newDept ){ 
         dept = newDept; 
     }
-
 }; 
 
 int main () { 
-
 
     // objects of class Teacher , c. name  obj name
     Teacher t1; 
