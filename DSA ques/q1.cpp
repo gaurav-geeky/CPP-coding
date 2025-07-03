@@ -32,14 +32,12 @@ int main()
 
     string s3 = "cpp string exercises"; 
 
-    for (int i=0; i<s3.size(); i++) {  
-  
-    } 
+    
 
     //  q4.  largest word in string  
     string s4 = "c++ is a general programming language"; 
     
-
+    
     
 }
 
