@@ -77,8 +77,8 @@ int main()
     v3.pop_back(); 
     cout<< "\n after pop()  of v3 : "<<v3.size() << "\n"; 
 
- 
-
-
 
 }
+
+
+

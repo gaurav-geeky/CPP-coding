@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    //  q1.  reverse give string
+    //  q1.  check given string is palindrome or not. 
 
     string s7 = "naman";  //  string
     
