@@ -30,7 +30,8 @@ int main() {
     string s1 = "add"; 
     string s2 = "lop"; 
 
-    bool c=iso(s1, s2); 
+    bool c=iso(s1, s2);  
+
     if (c)
     { 
         cout<<"Isomorphic"; 
@@ -39,5 +40,5 @@ int main() {
     { 
         cout<<"Not isomorphic"; 
     }
-
+    
 }
