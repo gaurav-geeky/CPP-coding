@@ -2,30 +2,39 @@
 #include <stack>
 using namespace std;
 
-int main()
+void rev(string s)
 {
+    cout<< "original string : " << s;  
+    cout<< "\n"; 
+    stack<string> st;
 
-    string s1 = "sky is blue";
-    
-    stack <string> st;
-
-    for (int i = 0; i < s1.length(); i++)
+    for (int i = 0; i < s.length(); ++i)
     {
-        string b=""; 
+        string wrd= "";
 
-        if (s1[i] != ' ' && i< s1.length())
+        while (s[i] != ' ' && i < s.length())
         {
-            b += s1[i]; 
+            wrd += s[i];
             i++; 
-        }
+            cout<< "\n in loop wrd : " << wrd << "\n"; // inside loop each letter adds 1 by 1, if "  " breaks; 
+        } 
 
-        st.push(b); 
-    }  
+        cout<< "wrd string: " << wrd << "\n"; // out of loop letter adds up to a word. 
+        st.push(wrd);
+    }
 
-    while (! st.empty()) { 
-        cout<< st.top() << " "; 
-        st.pop(); 
+    while (!st.empty()) // stack runs from backward till empty. 
+    {
+        cout << st.top() << " ";
+        st.pop();
     } 
     cout<< endl; 
-
 }
+
+int main()
+{
+    string str = "singh is king"; 
+    
+    rev(str);
+}
+

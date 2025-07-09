@@ -1,55 +1,59 @@
 #include <iostream>
 using namespace std;
 
+
 int main()
 {
-    string s1 = "II am the longest word in a string";
-    string b, str;
 
-    cout << "orginal : " << s1 << "\n";
+    string s = "Madam deputy Chairman I rise to support the bill";  
 
-    for (int i = 0; i < s1.size(); i++)
+    string w1, str;
+
+    cout << "original string: " << s << "\n";
+
+    for (int i = 0; i < s.length(); ++i)
     {
-
-        if (s1[i] != ' ')
+        if (s[i] != ' ')
         {
-            b.push_back(s1[i]);
+            w1.push_back(s[i]);
+            // i++;
         }
         else
         {
             break;
         }
     }
-    cout << " backup " << "\n";
+    cout << "back up in w1 : ";
 
-    for (int i = 0; i < b.size(); i++)
+    for (int i = 0; i < w1.size(); i++)
     {
-        cout << b[i];
+        cout << w1[i];
     }
 
-    for (int i = 0; i < s1.size(); i++)
-    {
+    for (int i=0;  i< s.length();  i++) { 
 
-        if (s1[i] != ' ')
-        {
+        if ( s[i] != ' ') 
+        { 
+            str.push_back (s[i]); 
 
-            str.push_back(s1[i]);
-
-            if (i + 1 == s1.size() && str.size() > b.size())
-            {
-                b = str;
+            if ( i+1 == s.size() && str.size() > w1.size())
+            { 
+                w1 = str; 
             }
-        }
+        } 
 
-        else
-        {
-            if (str.size() > b.size())
-            {
-                b = str;
-            }
-            str.clear();
+        else { 
+            if (str.size() > w1.size())
+            { 
+              w1 = str; 
+            } 
+            str.clear(); 
         }
     }
 
-    cout << " \nfinal output : " << b;
+    cout << "\nlargest word in a string : " << w1; 
+
+    //      this is the longest word in a string
+
 }
+
