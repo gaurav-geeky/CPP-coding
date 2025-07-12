@@ -38,4 +38,15 @@ int main()
     {
         cout << k << "\t";
     }
+
+    // using lambda func we can remove multiple based on condition. 
+    //  remove if takes function as a parameter. 
+
+    l1.remove_if( [] (int a) {return a>9;});  
+    
+    cout<< "\n after remove if : \n"; 
+    for (auto p:l1) { 
+        cout<<p << "\t"; 
+    }
+
 }
