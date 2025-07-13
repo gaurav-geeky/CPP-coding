@@ -1,4 +1,3 @@
-
 //  ##Q.2 Remove dulicate Element from sorted array #
 
 #include <iostream>
@@ -8,7 +7,8 @@ using namespace std;
 int main()
 {
     vector<int> p{1, 1, 1, 2, 2, 3, 3, 4, 5};
-    vector<int> v;
+    vector<int> v; 
+
     for (int i = 0; i < p.size(); i++)
     {
         if (p[i] != p[i + 1])

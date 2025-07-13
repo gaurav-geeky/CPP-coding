@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-/* 
+/*/
     vector<int> p(4, 100);
 
     cout << "\n value at 0 ind: " << p[0] << "\n";
@@ -20,7 +20,7 @@ int main()
     vector<int> v1{11, 4, 21, 32};
     cout << "size of v1: " << v1.size() << "\n";
 
-    cout << v1[1] << " : is 1st ind of v1" << "\n";
+    cout << v1[0] << " : is 1st ind of v1" << "\n";
 
     v1[1] = 999;
 
