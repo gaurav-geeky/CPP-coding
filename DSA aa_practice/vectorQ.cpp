@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 
-    vector<int> v = {1, 2, 3, 5, 6, 9};
+    vector<int> v = {1, 2, 3, 5, 6, 9, 15};
     int a;
 
     for (int i = 1; i < v.size(); i++)
