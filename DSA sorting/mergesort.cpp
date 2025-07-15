@@ -1,14 +1,18 @@
 //  merge sort : first break give array using mid value till single element then merge using pointers.
 
+//  int j = mid + 1; ____ because 0th element when /2 __ 1/2. it become zero as 1<2 so +1 agey khade ho ja.  17..
+
+//  int k = low;  _____ for array b where data which is copied will come here. 
 #include <iostream>
 using namespace std;
 
 void merges(int arr[], int low, int mid, int high)
 {
     int b[high + 1];
+    
     int i = low;
-    int j = mid + 1;
-    int k = low;
+    int j = mid + 1;  
+    int k = low;  
 
     while (i <= mid && j <= high)
     {
@@ -73,8 +77,3 @@ int main()
         cout<< arr[i] << "\t"; 
     }
 }
-
-
-
-
-
